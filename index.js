@@ -45,7 +45,7 @@ app.use(function (req, res, next) {
 
 
 app.get("/api/check", (req, res) => {
-  return res.send("Welcome to launchpad API: updated 10/2");
+  return res.send("Welcome to Broker Backend");
 });
 app.use('/api', indexRouter);
 
