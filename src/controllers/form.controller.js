@@ -11,6 +11,17 @@ exports.loanRequest = async (req, res) => {
 };
 
 
+exports.loan2Request = async (req, res) => {
+
+  try {
+    await service.loan2Request(req.body);
+    return res.status(200).send({ message: "Success." });
+  } catch (error) {
+    return res.status(500).send({ message: error, status: "errors" });
+  }
+};
+
+
 exports.contactRequest = async (req, res) => {
 
   try {
